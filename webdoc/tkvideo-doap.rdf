@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:doap="http://usefulinc.com/ns/doap#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:admin="http://webns.net/mvcb/"
+    xml:lang="uk">
+  <doap:Project>
+    <doap:name>Tk Video Widget</doap:name>
+    <doap:shortname>tkvideo</doap:shortname>
+    <doap:homepage rdf:resource="http://tkvideo.berlios.de/"/>
+    <doap:created>2004-05-06</doap:created>
+    <doap:shortdesc>A Tk video widget for use with Windows.</doap:shortdesc>
+    <doap:description>
+        A Tk video widget for use with Windows. This uses the DirectX streaming 
+        video APIs to display streams from files or devices (webcams).
+    </doap:description>
+    <doap:wiki rdf:resource="http://wiki.tcl.tk/tkvideo"/>
+    <doap:bug-database rdf:resource="https://developer.berlios.de/bugs/?group_id=1738"/>
+    <doap:screenshots rdf:resource="http://tkvideo.berlios.de/"/>
+    <doap:programming-language>C</doap:programming-language>
+    <doap:programming-language>Tcl</doap:programming-language>
+    <doap:os>Windows</doap:os>
+    <doap:license rdf:resource="http://usefulinc.com/doap/licenses/bsd"/>
+    <doap:download-page rdf:resource="https://developer.berlios.de/project/showfiles.php?group_id=1738"/>
+    <doap:maintainer>
+      <foaf:Person>
+        <foaf:name>Pat Thoyts</foaf:name>
+        <foaf:nick>patthoyts</foaf:nick>
+        <foaf:mbox_sha1sum>f603c70bc0baaee042d488ea3a078ab356cfa0fd</foaf:mbox_sha1sum>
+      </foaf:Person>
+    </doap:maintainer>
+    <doap:repository>
+      <doap:SVNRepository>
+        <doap:browse rdf:resource="http://svn.berlios.de/viewcvs/tkvideo"/>
+        <doap:location rdf:resource="http://svn.berlios.de/tkvideo"/>
+      </doap:SVNRepository>
+    </doap:repository>
+  </doap:Project>
+</rdf:RDF>
+
