@@ -1,0 +1,247 @@
+/*-General-----------------------------------------------*/
+
+body {
+	background-color: #ffffff /*#faf8ef*/;
+	color:#000000;
+	font-family:tahoma,arial,helvetica,sans-serif;
+	font-weight:normal;
+	text-decoration:none; 
+	font-size:x-small;
+	voice-family:"\"}\"";
+	voice-family:inherit;
+	font-size:small;
+	/* background:#faf8ef url('xxxxxx.jpg') no-repeat; */
+}
+html>body {
+	font-size:small;
+}
+
+.strong {
+	font-weight:bold;
+}
+
+/*-Main Markup-------------------------------------------*/
+
+#overall {
+	background-color: #ffffff;
+	color:#000000;
+}
+
+/*-Left Column--------*/
+
+.leftcolumn {
+	font-size: 1.18em;
+}
+
+.leftcolumn .node ul li {
+	padding: 4px;
+	color:#0060d0;
+}
+
+.leftcolumn .node a {
+	color:#0060d0;
+	background-color:transparent;
+}
+
+.leftcolumn .node p {
+	font-size:1.18em;
+	font-weight:normal;
+}
+
+.leftcolumn .node h1 {
+	font-weight:normal;
+	font-size:1.18em;
+	color:#ffffff;
+	background-color:#0060d0;
+}
+
+.leftcolumn .node h1 a {
+	color:#000000;
+	background-color:transparent;
+}
+
+.leftcolumn .node h2 {
+	font-weight:bold;
+	font-size:.95em;
+}
+
+.leftcolumn .node ul {
+	list-style-type:none;
+}
+
+.leftcolumn .node li.more {
+	font-weight:bold;
+	font-size:.75em;
+}
+
+.leftcolumn .node li.selected {
+	font-weight:bold;
+	font-size:1.18em;
+	color:#000000;
+	background-color:#cccccc;
+}
+
+.leftcolumn .node li a:hover {
+	color: #faf8ef;
+	background-color: #0060d0;
+}
+
+/*-Center Column------*/
+
+.centercolumn .node {
+	font-family: Georgia,Times New Roman, times, serif;
+	text-align: justify;
+}
+
+.centercolumn .node a {
+	color:#0060d0;
+	background-color:transparent;
+}
+
+.centercolumn .node h1 {
+	font-family:tahoma,arial,helvetica,sans-serif;
+	font-weight:normal;
+	font-size:1.38em;
+	color:#ffffff;
+	margin: 0px 0px 8px 0px;
+	background-color: #0060d0;
+}
+
+.centercolumn .node h1 a {
+	color:#ffffff;
+	background-color:transparent;
+}
+
+.centercolumn .node h2 {
+	font-weight:bold;
+	font-size:1.18em;
+}
+
+.centercolumn .node h3 {
+	font-weight:bold;
+	font-size:.95em;
+}
+
+.centercolumn .node h4 {
+	font-weight:normal;
+	font-size:1.2em;
+}
+
+.centercolumn .node h4 a {
+	font-weight:bold;
+}
+
+.centercolumn .node p {
+	font-size:1.2em;
+	font-weight:normal;
+        padding-top: 8pt;
+}
+
+.centercolumn .node table {
+	font-size:1.2em;
+	font-weight:normal;
+}
+
+.centercolumn .node ul {
+	font-size:1.2em;
+	font-weight:normal;
+}
+
+/*-Right Column-------*/
+
+.rightcolumn .node {
+	color:#000000;
+	background-color:#cccccc;
+}
+
+.rightcolumn .node a {
+	color:#0060d0;
+	background-color:transparent;
+}
+
+.rightcolumn .node h1 {
+	font-family:Arial, Helvetica, serif;
+	font-weight:bold;
+	font-size:1.38em;
+	color:#ffffff;
+	background-color:#0060d0;
+}
+
+.rightcolumn .node h1 a {
+	color:#ffffff;
+	background-color:transparent;
+}
+
+.rightcolumn .node h2 {
+	font-weight:bold;
+	font-size:.95em;
+}
+
+.rightcolumn .node ul.none {
+	list-style-type:none;
+}
+
+.rightcolumn .node ul.dot {
+	list-style-type:none;
+	list-style-image:url('../images/listdot.gif');
+}
+
+.rightcolumn .node ul.books {
+	list-style-type:disc;
+}
+
+/*- Header ----------------------------------------------*/
+
+.header .title {
+        height: 80px;
+        font-family:bangle,arial,helvetica,sans-serif;
+	font-weight:normal;
+        font-style: normal;
+	font-size:2.38em;
+	color:#0060d0;
+        text-align: center;
+        vertical-align: middle;
+	background-color: transparent;
+}
+
+.header .title img {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        text-align: left;
+}
+
+.footer {
+    background-color: #0060d0;
+    color: #ffffff;
+}
+
+/*-Remaining layout--------------------------------------*/
+
+#datestamp {
+	font-size:.75em;
+	font-family:tahoma,arial,helvetica,sans-serif;
+        color: #ffffff;
+}
+
+#copyright {
+	font-size:.75em;
+	font-family:tahoma,arial,helvetica,sans-serif;
+        color: #ffffff;
+}
+
+#copyright a {
+	background-color:transparent;
+	color:#660066;
+}
+
+
+
+
+
+
+
+
+
+
+		
