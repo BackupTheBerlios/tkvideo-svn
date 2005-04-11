@@ -1,0 +1,28 @@
+#header {
+  background: SteelBlue;
+}
+#body {
+  background: SteelBlue;
+}
+#content {
+  background: white;
+}
+#content h1, #content h2, #content h3 {
+  background: LightSteelBlue;
+}
+
+
+#sidebar {
+  background: LightSteelBlue;
+}
+#sidebar h1 {
+  background: LightSteelBlue; 
+  border-color: white;
+  color: black;
+}
+
+#sidebar .blank {background: LightSteelBlue;}
+
+#footer {
+  background: SteelBlue;
+}
