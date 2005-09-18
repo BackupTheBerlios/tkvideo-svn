@@ -1,38 +1,9 @@
 /* style.css - Copyright (C) 2004 Pat Thoyts <patthoyts@users.sourceforge.net> */
-
-#header {
-}
-#header h1 {
-  font-family: arial helvetica, sans-serif;
-  text-align: center;
-}
-#body {
-  font-family: tahoma, times, serif;
-}
-#body h1, #body h2, #body h3, #body h4{
-  font-family: tahoma, arial helvetica, sans-serif;
-}
-
-#content {
-    font-size: smaller;
-}
-
-#content h1, #content h2, #content h3 {
-  margin-right: -0.5em;
-  margin-left: -0.5em;
-  padding: 0 0 0.2em 0.2em;
-}
-
-#sidebar h1 {
-  border: 1px;
-  font-size: medium;
-}
-#sidebar ul li ul li {
-  font-size: smaller;
-}
-
-#footer {
-  text-align: right;
-  font-size: small;
-  font-family: tahoma, arial, helvetica, sans-serif;
-}
+#header {}
+#header h1 {font-family: arial helvetica, sans-serif;text-align: center;}
+#body {font-family: tahoma, times, serif;}
+#body h1, #body h2, #body h3, #body h4 {font-family: tahoma, arial helvetica, sans-serif;}
+#content {font-size: smaller;}
+#sidebar h1 {border: 1px;font-size: medium;}
+#sidebar ul li ul li {font-size: smaller;}
+#footer {text-align: right;font-size: small;font-family: tahoma, arial, helvetica, sans-serif;}

@@ -2,54 +2,77 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head>
    <title>Tk video widget</title>
-   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
-   <meta http-equiv="Description" name="Description" content="A Tk
-   widget to display video streams from either files (ampeg or avi) or
-   DirectX compatible video sources (eg: webcams)." />
-   <meta http-equiv="Keywords" name="Keywords"
-   content="video,webcam,mpeg,Tk,widget,windows,directx" />
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <meta http-equiv="Description" name="Description" content="A Tk widget to display video streams from either files (AVI or WMV) or DirectX compatible video sources such as webcams and video capture devices." />
+   <meta http-equiv="Keywords" name="Keywords" content="video,webcam,mpeg,Tk,widget,windows,directx" />
    <link rel="shortcut icon" href="/tkvideo.ico" type="image/x-icon" />
    <link rel="icon" href="/tkvideo.ico" type="image/x-icon" />
+   <link rel="meta" title="DOAP" type="application/rdf+xml" href="tkvideo-doap.rdf" />
    <style type="text/css">@import "layout.css";</style>
    <style type="text/css">@import "style.css";</style>
    <style type="text/css">@import "blue.css";</style>
-   <link rel="meta" title="DOAP" type="application/rdf+xml"
-   href="tkvideo-doap.rdf" />
 </head>
 
 <body>
-<div id="header">
-    <h1>Tk video widget</h1>
-</div>
-
+<div id="header"><h1>tkvideo - a video widget for the Tk toolkit</h1></div>
 <div id="body">
 <div id="content">
 
-  <h1>A Video widget for the Tk toolkit</h1>
+  <h2>Introduction</h2>
 
     <div style="float: right;">
-      <img style="padding: 0px; margin: 0 0 1em 1em; border: 0;" src="images/demo.jpg" alt="Screenshot of the demo
-    app." title="Tkvideo demo" />
+      <img style="padding: 0px; margin: 0 0 1em 1em; border: 0;" src="images/demo120.jpg" alt="Screenshot of the demo app." title="Tkvideo demo" />
     </div>
 
-  <p>This project aims to provide a video display widget
-     for the Tk toolkit that can be used to display video
-     data from files or from devices like webcams or TV
-     input.</p>
+  <p>This project aims to provide a video display widget for the Tk
+     toolkit that can be used to display video data from files or from
+     devices like webcams or TV input. This includes most webcams and
+     a number of common file types including AVI and WMV files.</p>
 
-  <p>At this time the widget only works for Windows. On
-     this platform it uses the DirectShow APIs to obtain
-     and display video and so can support any video
-     sources supported by DirectX.</p>
+  <p>At this time the widget only works for Windows. On this platform
+     it uses the DirectShow APIs to obtain and display video and so
+     can support any video sources supported by DirectX.</p>
 
 
   <p>A related project is the <a
-     href="http://hem.fyristorg.com/matben/qt/">
-     QuickTimeTcl</a> project. This supports QuickTime
-     sources (.mov files, streaming video and some
-     devices) on the Mac and Windows.</p>
+     href="http://hem.fyristorg.com/matben/qt/"> QuickTimeTcl</a>
+     project. This supports QuickTime sources (.mov files, streaming
+     video and some devices) on the Mac and Windows and also provides
+     for editing such files.</p>
 
-  <div class="prop"></div>
+  <h2>Installation</h2>
+
+  <p>The tkvideo package is provided as source code or a pre-compiled
+  zip archive is available. A Tcl starkit version may also be
+  available for use with <a href="http://equi4.com/tclkit.html">tclkit</a>.</p>
+
+  <p>To install the binary distribution you should locate your Tcl library
+  folder. This is available as the global variable tcl_library in a Tcl
+  shell. Unpack the zip archive in this folder and the package will be
+  available for use.</p>
+
+  <p>To compile the source code, you will require Microsoft Visual C++ 6.0,
+  a recent version of the Platform SDK and the DirectX SDK. Read the
+  comments in the file win/makefile.vc for additional details.</p>
+
+  <p>All files may be obtained from the project site at
+  <a href="http://developer.berlios.de/projects/tkvideo">http://developer.berlios.de/projects/tkvideo</a>.
+  Additionally the source code is maintained in a
+  <a href="http://developer.berlios.de/svn/?group_id=1738">Subversion repository</a></p>
+
+
+  <h2>Authors</h2>
+
+  <p>The tkvideo package has been written by Pat Thoyts</p>
+
+  <h2>License</h2>
+
+  <p>Please see the file
+  <a href="http://svn.berlios.de/wsvn/tkvideo/trunk/license.terms?op=file&rev=0&sc=0">license.terms</a>
+  for details of the software  license. If you require an alternative license you should contact the
+  authors of the software.</p>
+
+
   <div class="clear"></div>
   <p class="last">&nbsp;</p>
 </div>
@@ -79,16 +102,16 @@ google_ad_format = "120x600_as";
 google_ad_channel ="";
 //--></script>
 <script type="text/javascript"
-  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+  //src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
 </script>
 </div>
 
 <div class="clear"></div>
 
 <div id="footer">&nbsp;
-  <span id="datestamp">Last updated: $Date: 2004/03/15 23:23:39 $</span>
+  <span id="datestamp">Last updated: $Date: 2005/09/18 10:00:31 $</span>
   &nbsp;
-  <span id="copyright">Copyright &copy; 2004 Pat Thoyts</span>
+  <span id="copyright">Copyright &copy; 2004-2005 Pat Thoyts</span>
 </div>
 
 <div style="float: right; clear: both; padding-top: 4px;">
