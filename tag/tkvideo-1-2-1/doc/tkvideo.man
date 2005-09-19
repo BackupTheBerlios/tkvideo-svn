@@ -1,0 +1,172 @@
+[manpage_begin tkvideo n 1.2.1]
+[copyright {2004, Pat Thoyts}]
+[comment {link rel="stylesheet" href="manpage.css" type="text/css"}]
+[moddesc   {tkvideo}]
+[titledesc {Tk video widget}]
+[require Tk 8.4]
+[require tkvideo [opt 1.2]]
+[description]
+[para]
+
+This package provides a Tk widget that can display video streams from
+streaming video sources or from files. At this time the package only
+supports DirectShow sources on Windows. It should be possible to
+extend the backend in the future to support other platforms.
+
+[section "COMMANDS"]
+
+[list_begin definitions]
+
+[call [cmd "tkvideo"] [arg "pathName"] [opt "[arg \"option\"] [arg \"value\"] \"...\""]]
+
+Create a new instance of a video widget and configures it using the
+provided options and their values.
+
+[list_end]
+
+[section "WIDGET COMMANDS"]
+[list_begin definitions]
+
+[call [arg "pathName"] [method "cget"]]
+
+Returns information about the current configuration of the widget, for
+the specified option. For options and their meaning see the widget
+options section.
+
+[call [arg "pathName"] [method "configure"] [arg "option"] [arg "value"] "..."]
+
+Modifies the configuration of the widget. For options and
+their meaning see the widget options section.
+
+[call [arg "pathName"] [method "xview"]]
+
+This command is used to query and change the horizontal position of
+the information in the widget's window.
+
+[call [arg "pathName"] [method "yview"]]
+
+This command is used to query and change the vertical position of
+the information in the widget's window
+
+[call [arg "pathName"] [method "propertypage"] [lb] [arg "filter"] | [arg "pin"] [rb]]
+
+This command shows the DirectShow property pages for the video
+source. There may not be a property page to show, in which case
+nothing happens. For camera sources it is usually possible to
+configure the device with these pages. The [arg filter] page is the
+device driver page while the [arg pin] page is a lower level
+DirectShow page.
+
+[call [arg "pathName"] [method "start"]]
+
+Start streaming the video source. For a file based source this will
+start at the beginning of the stream. For camera sources the video
+becomes live.
+
+[call [arg "pathName"] [method "pause"]]
+
+Pause the video stream.
+
+[call [arg "pathName"] [method "stop"]]
+
+Stop the stream.
+
+[call [arg "pathName"] [method "devices"]]
+
+Returns a list of available input devices. An index into this list
+should be specified for use with the [arg -source] configuration
+option.
+
+[call [arg "pathName"] [method "picture"] [opt [arg "imagename"]]]
+
+Capture a photo image from the video stream. The image name may be
+specified. If no name is provided then an automatic name is provided
+using the normal "image photo create" command. The command returns the
+name of the Tk image created.
+
+[call [arg "pathName"] [method "tell"]]
+
+Returns a three element list giving the current position, the stop
+position and the maximum position for the current stream. The stop
+position is not currently available to be changed but is the location
+that the current playback will halt at.
+
+[call [arg "pathName"] [method "seek"] [arg "position"]]
+
+Moves the current seek position to the specified location. The start
+or the stream will always be 0 and the end of the stream is provided
+as the third list item returned by the [cmd tell] command.
+
+[list_end]
+
+
+[section "STANDARD WIDGET OPTIONS"]
+[list_begin tkoption]
+
+[tkoption_def -anchor anchor Anchor]
+[tkoption_def -background background Background]
+[tkoption_def -cursor cursor Cursor]
+[tkoption_def -height height Height]
+[tkoption_def -takefocus takeFocus TakeFocus]
+[tkoption_def -width width Width]
+[tkoption_def -xscrollcommand xScrollCommand ScrollCommand]
+[tkoption_def -yscrollcommand yScrollCommand ScrollCommand]
+[list_end]
+
+[section "WIDGET-SPECIFIC OPTIONS"]
+[list_begin tkoption]
+
+[tkoption_def -source source Source]
+
+This option sets the index of the device to use as a source or may be
+set to the filename of a file source. At this time WMV and AVI file
+sources are supported. Some image types can also be used if
+required. See the [cmd "devices video"] command for the list of available
+capture sources.
+
+[tkoption_def -audiosource audiosource AudioSource]
+
+Set the audio source. The [cmd "devices audio"] command provides a
+list of available audio sources and an index into this list should be
+provided here.
+
+[tkoption_def -output output Output]
+
+If a file name is provided then the video stream may also be saved to
+file. WMV and AVI files are supported. Note that WMV files require an
+audio input. AVI files may be video only. The type of file is
+determined from the file name extension. Set to the empty string to
+disable file saving.
+[nl]
+When recording to file, the file will only be closed and properly
+completed after the [cmd stop] command has been called.
+
+[tkoption_def -stretch stretch Stretch]
+
+The configured video source will have a native size. If this option is
+false then the video display area will be the video native size and
+any additional widget space is filled with the background specified
+for the -background option. The -anchor option is also used to
+position the video area within the widget.
+[nl]
+If this option is true then the display area is stretched or shrunk to
+fill the widget area. In this case then the -anchor option is ignored,
+the scrollcommands will not be called and there will be no background
+visible.
+
+[list_end]
+
+[section EXAMPLES]
+
+[para]
+[example {
+% pack [tkvideo .v -source 0] -expand 1 -fill both
+.v
+% .v start
+}]
+   
+[section AUTHORS]
+Pat Thoyts <patthoyts@users.berlios.de>
+
+[keywords video webcam mpeg avi]
+[manpage_end]
